@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Auth::routes();
 Route::get('/admin/employees', 'Admin\EmployeesController@index')->name('admin.employees');
 Route::post('/admin/employees/import', 'Admin\EmployeesController@import')->name('admin.employees.import');
-Route::get('/home', 'HomeController@index')->name('home');
+
 
