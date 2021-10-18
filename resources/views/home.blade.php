@@ -1,23 +1,22 @@
-@extends('layouts.app')
-
+@extends('layouts.layout')
+@section('title','Prueba David Chaparro')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="fw-light">Prueba de carga masiva en laravel</h1>
+        <p class="lead">Elaborado por David Chaparro</p>
+      </div>
     </div>
-</div>
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-light">Instrucciones</h2>
+    <p>Para realizar la carga de prueba ingrese en el sigueinte link <a href="{{ route('admin.employees') }}">Ingresar</a></p>
+  </div>
+</section>
 @endsection

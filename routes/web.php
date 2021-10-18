@@ -19,5 +19,8 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/admin/employees', 'Admin\EmployeesController@index')->name('admin.employees');
 Route::post('/admin/employees/import', 'Admin\EmployeesController@import')->name('admin.employees.import');
+Route::get('/home', function(){
+    return view('home');
+});
 
 

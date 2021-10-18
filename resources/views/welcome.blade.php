@@ -16,7 +16,7 @@
 <section class="py-5">
   <div class="container">
     <h2 class="fw-light">Instrucciones</h2>
-    <p>Para realizar la carga de prueba ingrese en el sigueinte link <a href="{{ route('admin.employees') }}">Ingresar</a></p>
+    <p>Para realizar la carga de prueba registrate en el siguente link en el sigueinte link <a href="{{ route('register') }}">Registrar</a></p>
   </div>
 </section>
 @endsection
